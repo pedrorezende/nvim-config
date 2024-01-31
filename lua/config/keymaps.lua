@@ -16,21 +16,22 @@ keymaps.set("n", "<C-a>", "gg<S-v>G")
 keymaps.set("n", "ss", ":split<Return>")
 keymaps.set("n", "sv", ":vsplit<Return>")
 
+-- Close buffer
+keymaps.set("n", "sd", ":bd<CR>")
+
 -- Move around
 keymaps.set("n", "<C-h>", "<C-w>h")
 keymaps.set("n", "<C-j>", "<C-w>j")
 keymaps.set("n", "<C-k>", "<C-w>k")
 keymaps.set("n", "<C-l>", "<C-w>l")
 
--- keymaps.set("n", "st", ":tabedit<Return>", opts)
--- keymaps.set("n", "<tab>", ":tabnext<Return>")
--- keymaps.set("n", "<s-tab>", ":tabprev<Return>")
-
 -- Reload configs
 keymaps.set("n", "<leader>r", ":so %<CR>")
 
--- Close buffer
-keymaps.set("n", "sd", ":bd<CR>")
-
 -- Leave insert mode
 keymaps.set("i", "kk", "<Esc>")
+keymaps.set("i", "jj", "<Esc>")
+
+-- Adding line without leaving normal mode
+keymaps.set("n", "zo", "o<Esc>k")
+keymaps.set("n", "zO", "O<Esc>j")
