@@ -12,12 +12,8 @@ keymaps.set("n", "-", "<C-x>")
 -- Select all
 keymaps.set("n", "<C-a>", "gg<S-v>G")
 
--- Split Window
-keymaps.set("n", "ss", ":split<Return>")
-keymaps.set("n", "sv", ":vsplit<Return>")
-
 -- Close buffer
-keymaps.set("n", "sd", ":bd<CR>")
+keymaps.set("n", "<C+w>d", ":bd<CR>")
 
 -- Move around
 keymaps.set("n", "<C-h>", "<C-w>h")
