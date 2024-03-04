@@ -31,3 +31,6 @@ keymaps.set("i", "jj", "<Esc>")
 -- Adding line without leaving normal mode
 keymaps.set("n", "zo", "o<Esc>k")
 keymaps.set("n", "zO", "O<Esc>j")
+
+keymaps.set("n", "ss", "<leader>/")
+keymaps.set("n", "<s-left><s-right>", "<leader>/")
